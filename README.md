@@ -41,5 +41,5 @@ A sophisticated Google Sheets-linked system that handles business data without m
 I am currently available for projects involving **Web Design** and **Business Process Automation**.
 
 * **Email:** salomegathumbi@gmail.com
-* **Portfolio:** [Link to your site]
+* **Portfolio:** https://sal-can-code.github.io/web-and-ops-demo/
 * **Upwork:** [Link to your Upwork profile]
