@@ -74,7 +74,29 @@ body {
   background-position: center;
   overflow: hidden;
 }
+/* Floating Back Button Styling */
+.back-to-portfolio {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: #0f172a; /* Dark professional color */
+  color: #ffffff;
+  padding: 12px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  z-index: 9999; /* Ensures it stays on top of everything */
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
 
+.back-to-portfolio:hover {
+  background: #f97316; /* Changes to your brand orange on hover */
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(249, 115, 22, 0.4);
+}
 /* Overlay with subtle animation */
 .hero::after {
   content: "";
