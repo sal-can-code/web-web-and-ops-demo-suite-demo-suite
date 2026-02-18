@@ -126,6 +126,17 @@ body {
 .btn-orange:hover {
   background: var(--deep-orange);
 }
+.text-link {
+  color: var(--primary-blue);
+  font-weight: bold;
+  text-decoration: none; 
+  transition: 0.3s;      
+}
+
+.text-link:hover {
+  color: var(--deep-blue); 
+  text-decoration: underline; 
+}
 
 /* =========================
    GRID & CARDS
@@ -211,14 +222,57 @@ body {
 /* =========================
    CONTACT & FOOTER
 ========================= */
-.contact {
+.contact-section {
   padding: 80px 10%;
   background: var(--bg-light-orange);
+  text-align: center;
 }
+
+.contact-title {
+  color: var(--primary-orange);
+  margin-bottom: 1rem;
+}
+
+.contact-text {
+  margin-bottom: 2rem;
+  color: var(--text-muted);
+}
+
 footer {
   padding: 3rem;
   background: var(--text-dark);
   color: var(--text-white);
+  text-align: center;
+}
+
+/* =========================
+   INVENTORY PAGE STYLES
+========================= */
+.reverse { flex-direction: row-reverse; }
+
+.sheet-img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    border: 1px solid #ddd;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.sheet-img:hover {
+    transform: scale(1.02);
+}
+
+.logic-list {
+    list-style: none;
+    margin-top: 1.5rem;
+    text-align: left;
+}
+
+.logic-list li {
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+    color: var(--text-muted);
 }
 
 /* =========================
@@ -247,5 +301,8 @@ footer {
   .btn {
     width: 100%;
     text-align: center;
+  }
+  .reverse { 
+    flex-direction: column; 
   }
 }

@@ -1,0 +1,157 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #ffe6f0;
+  color: #333;
+  text-align: center;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  background: #ff69b4;
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  text-decoration: none;
+  margin-top: 1.5rem;
+}
+
+/* =====================
+   HERO SECTION
+===================== */
+.hero {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url("images/hero-candy.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* overlay */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 182, 217, 0.65);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+  padding: 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #ff2f92;
+}
+
+.hero p {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+
+/* =====================
+   PRODUCTS
+===================== */
+.products {
+  padding: 4rem 1rem;
+}
+
+.products h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #ff2f92;
+}
+
+.product-grid {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  background: white;
+  width: 240px;
+  padding: 1.5rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* THIS LOCKS JPG SIZE */
+.product-card img {
+  width: 64px;
+  height: 64px;
+  max-width: 64px;
+  max-height: 64px;
+
+  object-fit: cover;
+
+  border-radius: 12px;
+  background: #fff0f6;
+  padding: 6px;
+  margin-bottom: 0.8rem;
+}
+
+.product-card h3 {
+  color: #ff2f92;
+  margin-bottom: 0.4rem;
+  font-size: 1.1rem;
+}
+
+.product-card p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* =====================
+   CONTACT
+===================== */
+.contact {
+  background: #ffd1e6;
+  padding: 4rem 1rem;
+}
+
+.contact h2 {
+  color: #ff2f92;
+  margin-bottom: 1rem;
+}
+
+/* =====================
+   FOOTER
+===================== */
+footer {
+  padding: 1.5rem;
+  background: #ffb6d9;
+  font-size: 0.9rem;
+}
+
+/* =====================
+   MOBILE
+===================== */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .product-card {
+    width: 90%;
+  }
+}
